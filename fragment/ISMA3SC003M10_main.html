@@ -1,0 +1,184 @@
+<!-- =========================================================
+     MYELIN · 본문 (기존 레이아웃의 <main> … </main> 안에 넣는 부분)
+     One Cycle Dev. Framework(ISMA3SC003M5)의 06 지식 자산화 단계 상세 화면
+     필요한 것: b.css 다음에 /resources/css/A3/renewal/onecycle_product.css
+     ========================================================= -->
+<section class="hero pd-hero" id="top">
+  <div class="pd-orbit" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none">
+    <circle cx="200" cy="200" r="196" stroke="rgba(255,255,255,.06)"/>
+    <circle cx="200" cy="200" r="150" stroke="rgba(255,255,255,.14)"/>
+    <circle cx="200" cy="200" r="104" stroke="rgba(255,255,255,.07)"/>
+    <circle class="dot" cx="200" cy="50" r="4"/><circle class="dot" cx="329.9" cy="125" r="4"/><circle class="dot" cx="329.9" cy="275" r="4"/><circle class="dot" cx="200" cy="350" r="4"/><circle class="dot" cx="70.1" cy="275" r="4"/><circle class="halo" cx="70.1" cy="125" r="7"/><circle class="me" cx="70.1" cy="125" r="7"/>
+  </svg></div>
+  <div class="wrap">
+    <nav class="pd-crumb" aria-label="현재 위치"><a href="/a3sc/ISMA3SC003M4.do">AI 플랫폼</a><a href="/a3sc/ISMA3SC003M5.do">One Cycle Dev. Framework</a><b>06 지식 자산화</b></nav>
+    <span class="kicker">MYELIN</span>
+    <h1>배운 것을 남기고,<br>쓸수록 <em>빨라지게</em></h1>
+    <p class="lede">프로젝트에서 얻은 배움을 노트로 적고, 사람이 읽고 확인한 것만 「믿을 수 있는 노트」로 올립니다. 그 노트가 다음 일에 다시 쓰일수록 연결이 굵어지는, 개인 지식 운영체계입니다.</p>
+    <div class="hero-meta">
+      <div><b>내 PC<small></small></b><span>노트가 파일로 저장되는 곳</span></div>
+      <div><b>7<small>종</small></b><span>Claude에게 맡기는 작업 명령(Skill)</span></div>
+      <div><b>3<small>단계</small></b><span>다시 쓰일수록 오르는 미엘린 강도</span></div>
+      <div><b>9<small>종</small></b><span>지식이 실제로 재사용되는지 재는 지표</span></div>
+    </div>
+    <nav class="subnav" id="pd-subnav"><a href="#intro" class="on">개요</a><a href="#how">동작 방식</a><a href="#features">주요 기능</a><a href="#verify">승격과 강도</a><a href="#output">결과물</a><a href="#cycle">One Cycle 연결</a><a href="#terms">용어·FAQ</a><a href="#contact">도입 문의</a></nav>
+  </div>
+</section>
+
+<!-- 개요: 무엇이고, 왜 필요한가 -->
+<section class="sec"><div class="wrap pd-anchor" id="intro">
+  <div class="intro"><div><span class="kicker">Overview</span><h2>배운 것은 왜<br>다음에 <em>다시 헤맬까요</em></h2></div>
+    <div class="prose"><p class="big">프로젝트가 끝나면 보고서는 남습니다. 그러나 그 과정에서 배운 것, 곧 왜 그렇게 판단했고 어디서 막혔는지는 담당자의 머릿속과 흩어진 메모에만 남습니다.</p>
+    <p>그래서 비슷한 일을 다시 맡으면 같은 자료를 다시 찾고, 같은 곳에서 다시 막힙니다. 메모 앱에 적어 두어도 사정은 크게 다르지 않습니다. 메모는 쌓이기만 하고, 어느 것이 확인된 내용인지, 어느 것이 실제로 쓸모가 있었는지 알려 주지 않기 때문입니다.</p>
+    <p>MYELIN은 이 과정에 순서를 둡니다. 배움을 노트로 적고, AI가 정리한 초안을 사람이 읽어 확인한 뒤에만 검증된(verified) 노트로 올립니다. 그리고 그 노트가 다른 노트나 보고서에 다시 쓰일 때마다 「강도」가 올라, 자주 쓰는 지식이 무엇인지 드러납니다.</p>
+    <p>이름은 신경 섬유를 감싸 신호 전달을 빠르게 하는 조직인 미엘린(myelin)에서 왔습니다. 자주 쓰는 신경 경로일수록 미엘린이 두꺼워져 더 빨라지는 것처럼, 쓸수록 빨라지는 지식 신경망을 만들겠다는 뜻입니다.</p></div></div>
+  <div class="pd-plain"><span class="lb">쉽게 말하면</span>
+    <p>자주 다니는 산길이 저절로 넓어지듯, <em>자주 다시 쓰는 지식일수록 길이 굵어지는</em> 개인 노트 체계입니다.</p>
+    <small>한 번 지나간 자리는 금세 풀에 덮이지만, 여러 번 다닌 길은 다음 사람도 찾기 쉽습니다. MYELIN은 확인을 거친 노트에만 길 표시를 하고, 그 길을 몇 번 다시 걸었는지를 세어 보여 줍니다.</small></div>
+  <div class="pd-cards">
+    <article><div class="ft"><span>경험이 사람에게만 남을 때</span><b>노트로 옮깁니다</b></div><p>회의·실험·점검에서 나온 생각을 내 컴퓨터의 노트로 적습니다. AI가 메모를 다시 쓰기 좋은 작은 노트로 나누어 초안을 만듭니다.</p></article>
+    <article><div class="ft"><span>AI가 쓴 글을 믿기 어려울 때</span><b>사람이 읽고 올립니다</b></div><p>AI 초안은 별도 보관함에만 쌓입니다. 사람이 본문을 열어 읽은 뒤에야 승격 버튼이 켜지고, 그 클릭이 기록으로 남습니다.</p></article>
+    <article><div class="ft"><span>메모가 쌓이기만 할 때</span><b>재사용을 셉니다</b></div><p>검증된 노트가 다른 노트에서 연결되거나 보고서의 재료로 쓰이면 강도가 ×1에서 ×3까지 오릅니다. 쓰이지 않는 지식도 함께 드러납니다.</p></article>
+    <article><div class="ft"><span>내 노트를 회사가 볼까 걱정될 때</span><b>보관함은 내 것입니다</b></div><p>노트 보관함(Vault)은 개인 소유이고 조직은 열람하지 않습니다. 공유는 본인이 고른 노트에 한해, 검사를 통과한 뒤에만 이루어집니다.</p></article>
+  </div>
+</div></section>
+
+<!-- 동작 방식 -->
+<section class="sec dark"><div class="wrap pd-anchor" id="how">
+  <div class="sec-h"><div><span class="kicker">How it works</span><h2>적고, 확인하고,<br>다시 씁니다</h2></div><p>MYELIN은 노트 앱 Obsidian, AI 도우미 Claude, 그리고 승격 화면인 Hub 세 가지로 움직입니다. 글은 Obsidian에 적고, 정리는 Claude가 돕고, 믿을 수 있는 노트로 올리는 결정은 Hub에서 사람이 내립니다.</p></div>
+  <ol class="pd-steps">
+    <li><b>메모를 적습니다</b><p>회의·독서·점검에서 나온 생각을 Obsidian의 받은 편지함(Inbox)에 적습니다. Obsidian은 노트를 내 컴퓨터에 일반 텍스트 파일로 저장하는 노트 앱입니다.</p><span class="who">사람 · Obsidian</span></li>
+    <li><b>AI가 초안을 만듭니다</b><p>Claude가 메모를 한 가지 주제만 담은 작은 노트로 나누고, 외부 자료는 출처와 핵심 주장을 정리합니다. 결과는 AI 초안 폴더에만 쌓입니다.</p><span class="who">Claude · AI 초안</span></li>
+    <li><b>읽고 승격합니다</b><p>Hub의 검토 화면(Review Gate)에서 본문을 읽고 승격 또는 반려를 누릅니다. 승격된 노트는 분야 폴더로 옮겨지고 verified 표시가 붙습니다.</p><span class="who h">사람의 클릭</span></li>
+    <li><b>노트를 서로 잇습니다</b><p>Claude가 관련 노트 사이의 연결과 분야별 목차 갱신안을 「제안 파일」로 냅니다. 기존 노트를 직접 고치지 않으며, 사람이 미리보기를 확인하고 적용합니다.</p><span class="who h">Claude 제안 · 사람 적용</span></li>
+    <li><b>일에 다시 씁니다</b><p>설계서·제안서·보고서 초안을 만들 때 검증된 노트만 재료로 씁니다. 재료로 쓰인 노트는 강도가 오릅니다.</p><span class="who">Claude · 검증된 노트만</span></li>
+    <li><b>새 배움을 되돌립니다</b><p>완성한 산출물에는 기존 노트에 없던 주장과 교훈이 「환류 후보」로 따로 정리됩니다. 이를 다시 초안으로 만들어 승격하면 한 바퀴가 닫힙니다.</p><span class="who h">Claude 초안 · 사람 승격</span></li>
+  </ol>
+  <div class="pd-legend"><span>사람이 적거나 AI가 초안을 만드는 단계</span><span class="h">사람의 확인이 있어야 반영되는 단계</span></div>
+  <p class="pd-note">Hub에서 누르는 버튼 하나는 변경 이력(git commit) 하나로 기록됩니다. 누가 언제 무엇을 승격하고 적용했는지를 나중에 되짚어 볼 수 있습니다.</p>
+</div></section>
+
+<!-- 주요 기능 -->
+<section class="sec"><div class="wrap pd-anchor" id="features">
+  <div class="sec-h"><div><span class="kicker">Features</span><h2>AI는 초안까지,<br>결정은 사람이</h2></div><p>기능은 다섯 묶음입니다. 모두 「AI가 만든 것과 사람이 확인한 것을 섞지 않는다」는 한 가지 원칙 위에 놓여 있습니다.</p></div>
+  <div class="rf">
+    <article class="lead"><h3>Review Gate · 읽은 사람만 승격</h3>
+      <p>MYELIN에서 노트 보관함을 바꾸는 중심 화면입니다. AI 초안, 연결 제안, 공유 후보가 이곳에 모이고, 사람이 하나씩 읽고 결정합니다.</p>
+      <ul><li>「내용 읽기」로 본문을 연 뒤에만 승격 버튼이 켜집니다</li><li>연결 제안은 바뀌는 부분을 미리 보여 준 뒤 적용합니다</li><li>반려한 초안과 제안도 지우지 않고 따로 보관합니다</li><li>버튼 한 번이 변경 이력 한 건으로 남습니다</li></ul></article>
+    <article><h3>Claude 연결 · 작업 명령 7종</h3><p>Claude Code에서 쓰는 작업 명령(Skill)과, Claude가 노트를 검색·조회하는 연결 통로(MCP)를 제공합니다.</p><ul><li>자료 정리·메모 분해·경험 인터뷰·주간 점검</li><li>노트 연결 제안·산출물 초안·특허 후보 탐색</li><li>MCP는 기본이 읽기 전용입니다</li></ul></article>
+    <article><h3>단계별 권한 · Guard</h3><p>Claude에게 줄 자율을 0~3단계(Level)로 정합니다. 단계 밖의 폴더에 쓰려는 시도는 차단 장치(Guard)가 막습니다.</p><ul><li>0단계는 읽기만, 1단계는 초안 작성까지</li><li>검증된 노트 폴더와 설정은 사람만 고칩니다</li><li>판단할 수 없는 요청은 거부합니다</li></ul></article>
+    <article><h3>Domain Pack · 분야별 묶음</h3><p>분야(Domain)마다 목차 주제, 노트 양식, 용어, 경험을 끌어내는 질문을 한 묶음으로 제공합니다. 프로그램을 고치지 않고 선언 파일만으로 분야를 더합니다.</p><ul><li>보안 컨설팅: 진단 방법론·컴플라이언스·위협 모델링 등</li><li>침해사고 대응: 초동 대응·타임라인·포렌식 절차·사후 검토 등</li><li>개인이 자기 분야를 직접 정의할 수 있습니다</li></ul></article>
+    <article><h3>개인 소유와 기밀 보호</h3><p>보관함은 개인의 것이고, 기밀로 분류한 노트는 외부 AI로 보내지 않도록 장치로 막습니다.</p><ul><li>기밀 노트·특허 후보는 로컬 LLM 세션에서만 읽습니다</li><li>Hub는 설치한 컴퓨터에서만 열립니다</li><li>공유 전 개인정보·식별 정보를 자동 검사합니다</li></ul></article>
+  </div>
+  <div class="pd-cards">
+    <article><div class="ft"><span>파일·웹 주소·PDF를 넣으면</span><b>자료 정리</b></div><p>출처·핵심 주장·인용 위치를 정리한 문헌 노트 초안이 나옵니다. (ingest · 1단계)</p></article>
+    <article><div class="ft"><span>받은 편지함의 메모를 넣으면</span><b>메모 분해</b></div><p>한 주제씩 나눈 노트 초안이 나옵니다. 중복이면 기존 노트 보강을 제안합니다. (distill · 1단계)</p></article>
+    <article><div class="ft"><span>Pack의 질문에 답하면</span><b>경험 인터뷰</b></div><p>짧은 문답을 거쳐 경험을 교훈 노트 초안으로 남깁니다. (interview · 1단계)</p></article>
+    <article><div class="ft"><span>일주일에 한 번 부르면</span><b>주간 점검</b></div><p>목표를 벗어난 지표와 할 일을 해석한 주간 보고서가 나옵니다. (review · 1단계)</p></article>
+    <article><div class="ft"><span>노트나 분야를 지정하면</span><b>연결 제안</b></div><p>관련 노트 연결과 목차 갱신을 제안 파일로 냅니다. (link · 2단계)</p></article>
+    <article><div class="ft"><span>목적과 독자를 알려 주면</span><b>산출물 작성</b></div><p>검증된 노트만 재료로 설계서·제안서·보고서 초안을 씁니다. (compose · 2단계)</p></article>
+    <article><div class="ft"><span>여러 분야의 검증된 노트에서</span><b>특허 후보 탐색</b></div><p>특허 후보 초안을 냅니다. 로컬 LLM 세션에서만 동작합니다. (ip-scan · 3단계)</p></article>
+    <article><div class="ft"><span>Claude가 물어보면</span><b>검색·조회</b></div><p>연결 통로(MCP)로 노트를 검색하고 읽습니다. 기본은 읽기 전용이며 기밀 노트의 본문은 돌려주지 않습니다.</p></article>
+  </div>
+  <p class="pd-note">앞의 일곱 가지가 작업 명령(Skill)이고, 괄호 안은 명령 이름과 필요한 권한 단계입니다. 어느 명령이든 결과는 초안 또는 제안입니다. 검증된 노트가 되거나 기존 노트에 반영되려면 Review Gate에서 사람의 확인을 거쳐야 합니다.</p>
+</div></section>
+
+<!-- 승격과 강도 -->
+<section class="sec dark"><div class="wrap pd-anchor" id="verify">
+  <div class="sec-h"><div><span class="kicker">Verified &amp; strength</span><h2>verified는 끝이 아니라<br>시작입니다</h2></div><p>노트는 정해진 조건을 채워야 검증된 노트가 되고, 그 뒤에는 얼마나 다시 쓰였는지에 따라 강도가 달라집니다. 두 기준 모두 사용자 가이드에 적힌 그대로입니다.</p></div>
+  <div class="pd-case">
+    <article><span class="st">승격 조건</span><h3>초안이 verified가 되려면</h3>
+      <p>아래 조건을 모두 채운 초안만 승격됩니다. 하나라도 어긋나면 버튼이 꺼지거나 요청이 거부됩니다.</p>
+      <ol class="pd-chain">
+        <li><b>사람이 본문을 열어 읽었을 것</b><span>「내용 읽기」를 누르기 전에는 승격 버튼이 비활성입니다.</span></li>
+        <li><b>노트 머리 정보가 온전할 것</b><span>종류·분야·상태 등을 적는 머리 부분이 깨진 초안은 승격할 수 없습니다.</span></li>
+        <li><b>들어갈 분야가 정해져 있을 것</b><span>분야가 없는 초안은 먼저 분야를 골라야 합니다.</span></li>
+        <li><b>같은 이름의 노트가 없을 것</b><span>이미 있으면 막고, 기존 노트를 보강하는 쪽으로 안내합니다.</span></li>
+      </ol>
+      <div class="res"><b>기록</b>승격하면 검토 날짜가 적히고, 작성 주체가 「AI」에서 「AI 작성·사람 검토」로 바뀌며, 변경 이력이 한 건 남습니다.</div></article>
+    <article><span class="st">미엘린 강도</span><h3>다시 쓰일수록 굵어집니다</h3>
+      <p>검증된 노트에는 재사용 정도에 따라 ×1부터 ×3까지 강도가 글자로 표시됩니다. 검증되지 않은 노트에는 강도가 없습니다.</p>
+      <ol class="pd-chain">
+        <li><b>×1 · 검증됨</b><span>Review Gate에서 승격된 상태입니다.</span></li>
+        <li><b>×2 · 재사용됨</b><span>다른 노트 두 곳 이상에서 연결되었거나, 산출물의 재료로 한 번 이상 쓰였습니다.</span></li>
+        <li><b>×3 · 허브</b><span>공유 저장소에서 한 번 이상 인용되었거나, 다섯 곳 이상에서 연결되고 산출물 재료로 두 번 이상 쓰였습니다.</span></li>
+      </ol>
+      <div class="res"><b>지표</b>검증된 노트 가운데 ×2 이상의 비율, 노트가 산출물에 쓰이기까지 걸린 날 수 등을 대시보드에서 목표와 견주어 봅니다.</div></article>
+  </div>
+  <p class="pd-note">verified는 「사람이 읽고 승인했다」는 기록입니다. 노트 내용이 사실임을 시스템이 보증한다는 뜻은 아닙니다. 강도 역시 얼마나 다시 쓰였는지를 세는 값이며, 내용의 옳고 그름을 재지 않습니다.</p>
+</div></section>
+
+<!-- 결과물 -->
+<section class="sec soft"><div class="wrap pd-anchor" id="output">
+  <div class="sec-h"><div><span class="kicker">Deliverables</span><h2>내 컴퓨터에 남는<br>지식 자산</h2></div><p>결과물은 모두 내 컴퓨터의 노트 보관함에 일반 텍스트 파일로 남습니다. MYELIN을 쓰지 않더라도 Obsidian이나 다른 편집기로 그대로 열 수 있습니다.</p></div>
+  <div class="pd-tw"><table class="pd-table"><thead><tr><th scope="col">결과물</th><th scope="col">무엇인가</th><th scope="col">누가 만들고 누가 확정하나</th></tr></thead><tbody>
+    <tr><th scope="row">검증된 노트</th><td>한 가지 주제를 담은 노트. 분야 폴더에 놓이고 verified 표시와 강도가 붙습니다</td><td>AI 초안 또는 사람 작성 → <span class="st">사람 승격</span></td></tr>
+    <tr><th scope="row">분야별 목차 (MOC)</th><td>한 분야의 노트를 주제별로 찾아가는 지도 노트</td><td>Claude가 갱신 제안 → <span class="st">사람 적용</span></td></tr>
+    <tr><th scope="row">산출물 초안</th><td>검증된 노트를 재료로 쓴 설계서·제안서·보고서 초안과 환류 후보</td><td>Claude 작성 → 사람이 다듬어 사용</td></tr>
+    <tr><th scope="row">주간 보고서</th><td>지표 9종의 목표 이탈, 환류 대기 산출물, 점검에서 나온 할 일</td><td>Claude 작성 (초안)</td></tr>
+    <tr><th scope="row">대시보드</th><td>검증된 노트 수, 검토 대기 수, 강도 분포, 재사용 지표, 최근 변경 이력</td><td>시스템 계산 (읽기 전용)</td></tr>
+    <tr><th scope="row">변경 이력</th><td>승격·반려·적용·설정 변경이 한 건씩 기록된 git 이력</td><td>시스템 기록</td></tr>
+    <tr><th scope="row">공유 제안</th><td>본인이 공유하기로 한 검증된 노트를 팀 공유 저장소(Commons)에 올리자는 제안</td><td>본인 선택 → 자동 검사 → <span class="st">담당자 검토</span></td></tr>
+  </tbody></table></div>
+  <p class="pd-note">현재 제품은 한 사람이 자기 컴퓨터에서 쓰는 구성입니다. Hub는 설치한 컴퓨터에서만 열리며, 여러 사람이 접속해 함께 쓰는 로그인 기능은 구현되어 있지 않습니다. 설치는 명령줄에서 진행합니다. 공유 전 식별 정보 검사는 정해진 패턴과 금칙어를 찾는 방식이어서 모든 경우를 잡아내지는 못하므로, 본인의 확인 체크와 담당자 검토를 함께 둡니다.</p>
+</div></section>
+
+<!-- One Cycle 안에서의 자리 (이 구역의 pd-loop 와 pd-nav 는 다섯 화면 공통: 고치지 않는다) -->
+<section class="sec"><div class="wrap pd-anchor" id="cycle">
+  <div class="sec-h"><div><span class="kicker">In the cycle</span><h2>One Cycle 안에서<br>06 지식 자산화를 맡습니다</h2></div><p>앞 단계들이 남긴 보고서와 그 과정에서 얻은 경험을 노트로 옮겨 검증합니다. 검증된 노트와 분야 묶음은 다음 프로젝트의 출발점이 됩니다.</p></div>
+  <ol class="pd-loop" aria-label="One Cycle 여섯 단계">
+    <li><div class="cell"><i>01</i><b>개발</b><span>AI Agent Platform</span></div></li>
+    <li><a class="cell" href="/a3sc/ISMA3SC003M6.do"><i>02</i><b>품질 진단</b><span>WDLAB-LLMOps</span></a></li>
+    <li><a class="cell" href="/a3sc/ISMA3SC003M7.do"><i>03</i><b>보안 분석·수정</b><span>SSC</span></a></li>
+    <li><a class="cell" href="/a3sc/ISMA3SC003M8.do"><i>04</i><b>형식 검증</b><span>Proof-Skills</span></a></li>
+    <li><a class="cell" href="/a3sc/ISMA3SC003M9.do"><i>05</i><b>운영 감시</b><span>ARGUS</span></a></li>
+    <li class="on" aria-current="step"><div class="cell"><i>06</i><b>지식 자산화</b><span>MYELIN</span></div></li>
+  </ol>
+  <div class="pd-io">
+    <div><small>앞 단계에서 받는 것</small><b>진단·검증·감시의 기록과 경험</b><span>품질 진단, 보안 분석, 형식 검증, 운영 감시에서 나온 보고서와 담당자의 판단·교훈입니다. 사람이 자료를 넣거나 메모로 적으면 Claude가 초안으로 정리합니다.</span></div>
+    <div><small>이 단계가 하는 일</small><b>초안을 검증된 노트로</b><span>사람이 읽고 승격한 노트만 분야 폴더에 쌓고, 서로 잇고, 다시 쓰인 횟수에 따라 강도를 매깁니다.</span></div>
+    <div><small>다음 단계로 넘기는 것</small><b>다시 쓸 수 있는 노트와 Pack</b><span>검증된 노트는 다음 프로젝트의 설계서·제안서·보고서 초안의 재료가 되고, 다듬어진 분야 묶음은 팀의 표준 후보가 됩니다.</span></div>
+  </div>
+  <nav class="pd-nav" aria-label="다른 플랫폼">
+    <a class="prev" href="/a3sc/ISMA3SC003M9.do"><small>← 이전 단계 · 05 운영 감시</small><b>ARGUS</b></a>
+    <a class="home" href="/a3sc/ISMA3SC003M5.do#stages"><small>전체 흐름 보기</small><b>One Cycle Dev. Framework</b></a>
+    <a class="next" href="/a3sc/ISMA3SC003M6.do"><small>다음 단계 · 02 품질 진단 →</small><b>WDLAB-LLMOps</b></a>
+  </nav>
+</div></section>
+
+<!-- 용어 풀이 · 자주 묻는 질문 -->
+<section class="sec soft"><div class="wrap pd-anchor" id="terms">
+  <div class="sec-h"><div><span class="kicker">Glossary</span><h2>처음 보는 말,<br>쉽게 풀어 드립니다</h2></div><p>이 화면에 나오는 용어를 전공자가 아니어도 읽을 수 있게 정리했습니다.</p></div>
+  <dl class="pd-terms">
+    <div><dt>미엘린<small>myelin · 수초</small></dt><dd>신경 섬유를 감싸 신호 전달을 빠르게 하는 조직입니다. 자주 쓰는 경로일수록 두꺼워진다는 점을 제품 이름의 비유로 삼았습니다.</dd></div>
+    <div><dt>Obsidian<small>노트 앱</small></dt><dd>노트를 내 컴퓨터에 일반 텍스트 파일(Markdown)로 저장하는 노트 앱입니다. MYELIN은 이 파일을 원본으로 삼습니다.</dd></div>
+    <div><dt>Vault<small>노트 보관함</small></dt><dd>노트 파일이 들어 있는 내 컴퓨터의 폴더입니다. 개인 소유이며 조직은 열람하지 않습니다.</dd></div>
+    <div><dt>Hub<small>웹 대시보드</small></dt><dd>지표를 보고, 초안을 승격하고, 설정을 바꾸는 화면입니다. 설치한 컴퓨터의 브라우저에서만 열립니다.</dd></div>
+    <div><dt>AI 초안<small>ai-draft</small></dt><dd>Claude가 만든 노트 초안입니다. 전용 폴더에만 생기며, 화면에서 항상 사람이 쓴 노트와 구분해 표시합니다.</dd></div>
+    <div><dt>verified<small>검증된 노트</small></dt><dd>사람이 본문을 읽고 Review Gate에서 승격한 노트입니다. 산출물을 만들 때 재료로 쓰이는 것은 이 노트뿐입니다.</dd></div>
+    <div><dt>Review Gate<small>검토 화면</small></dt><dd>AI 초안, 연결 제안, 공유 후보를 사람이 읽고 승격·반려·적용하는 Hub의 화면입니다.</dd></div>
+    <div><dt>미엘린 강도<small>myelin ×1~×3</small></dt><dd>검증된 노트가 다른 노트와 산출물에 얼마나 다시 쓰였는지를 세 단계로 나타낸 값입니다.</dd></div>
+    <div><dt>Domain Pack<small>분야별 묶음</small></dt><dd>Domain은 지식을 묶는 큰 분야이고, Pack은 그 분야의 목차 주제·노트 양식·용어·질문을 담은 선언 파일입니다.</dd></div>
+    <div><dt>MOC<small>Map of Content</small></dt><dd>한 분야의 노트를 주제별로 모아 둔 목차 노트입니다. 사람이 승인해야 바뀝니다.</dd></div>
+    <div><dt>Skill · MCP<small>Claude 연결 방식</small></dt><dd>Skill은 Claude Code에서 부르는 작업 명령이고, MCP는 Claude가 보관함을 검색·조회하는 표준 연결 통로입니다.</dd></div>
+    <div><dt>Commons<small>팀 공유 저장소</small></dt><dd>본인이 공유하기로 한 노트와 분야 묶음이 모이는 팀 저장소입니다. 검사와 담당자 검토를 거친 것만 들어갑니다.</dd></div>
+  </dl>
+  <h3 class="pd-faq-h">자주 묻는 질문</h3>
+  <div class="pd-faq">
+    <details><summary>내 노트가 회사나 외부로 나가지 않습니까</summary><p>노트는 내 컴퓨터의 폴더에 파일로 저장되며, MYELIN이 이를 회사 서버로 올리지 않습니다. 조직은 개인 보관함을 열람하지 않습니다. 다만 Claude에게 정리를 맡기면 그 작업에 쓰이는 노트 내용은 Claude로 전달됩니다. 그래서 기밀로 분류한 노트와 특허 후보 폴더는 로컬 LLM으로 연 세션에서만 읽히도록 장치로 막아 두었습니다. 사용 현황 지표를 팀과 나누는 기능은 기본이 꺼져 있고, 켜더라도 익명 처리한 식별값과 개수만 보내며 제목과 본문은 포함하지 않습니다.</p></details>
+    <details><summary>AI가 틀린 내용을 노트로 만들면 어떻게 됩니까</summary><p>AI가 만든 것은 초안 폴더에만 쌓이고, 그 상태로는 검증된 노트가 되지 않습니다. 사람이 본문을 읽고 승격해야 하며, 틀렸다면 반려하면 됩니다. 산출물을 만들 때는 검증된 노트만 재료로 쓰므로 반려된 초안이 보고서에 섞이지 않습니다. AI 초안 가운데 승격되는 비율이 지나치게 높으면 검토가 부실하다는 신호로 보고 대시보드가 「목표 이탈」로 알립니다.</p></details>
+    <details><summary>사람이 해야 하는 일은 무엇입니까</summary><p>메모를 적는 일, 초안을 읽고 승격하거나 반려하는 일, 연결 제안을 확인하고 적용하는 일, 공유할 노트를 고르는 일입니다. 가이드는 메모를 7일 안에 처리하고 주 1회 점검하는 습관을 권합니다. Claude에게 줄 권한 단계도 사람만 바꿀 수 있습니다.</p></details>
+    <details><summary>Obsidian만 써도 되지 않습니까. 무엇이 다릅니까</summary><p>Obsidian은 노트를 쓰고 잇는 편집기입니다. MYELIN은 그 위에 규칙을 더합니다. AI가 쓸 수 있는 폴더를 제한하고, 사람이 확인한 노트와 그렇지 않은 노트를 구분하며, 재사용 정도를 세고, 분야별 양식과 질문을 제공합니다. Obsidian과의 연동은 별도 플러그인이 아니라 화면 테마와 파일 규약으로 이루어지므로, 노트 파일은 Obsidian에서 그대로 열립니다.</p></details>
+    <details><summary>팀에 공유할 때는 무엇이 걸러집니까</summary><p>공유는 본인이 노트에 공유 표시를 해야만 시작됩니다. 검증된 노트일 것, 기밀 등급이 아닐 것, 특허 후보 폴더 밖일 것, 기밀 노트로 이어지는 연결이 없을 것을 먼저 확인합니다. 이어서 IP 주소·이메일·전화번호·주민등록번호·비밀값·내부 주소·금칙어를 자동 검사합니다. 통과한 뒤에도 본인이 「고객명·IP·기밀이 없음을 확인했습니다」에 체크해야 제안이 만들어지고, 담당자가 검토해 받아들입니다. 공유된 노트에는 작성자 이름이 남습니다.</p></details>
+    <details><summary>무엇을 보증하고 무엇은 보증하지 않습니까</summary><p>보증하는 것은 절차와 기록입니다. 검증된 노트는 사람이 읽고 승격했다는 것, AI는 허용된 폴더 밖에 쓰지 못한다는 것, 변경이 이력으로 남는다는 것입니다. 보증하지 않는 것은 노트 내용의 정확성 자체입니다. 차단 장치에도 범위가 있습니다. 보관함 밖에서 실행되는 스크립트나 네트워크 전송까지 모두 검사하지는 못하므로, 그런 명령은 실행 전에 사용자 확인을 묻고 변경 이력으로 사후 점검하도록 했습니다.</p></details>
+    <details><summary>온프레미스나 로컬 LLM으로 쓸 수 있습니까</summary><p>노트 보관함과 Hub는 처음부터 내 컴퓨터에서만 동작합니다. Hub의 도움말 챗봇은 같은 컴퓨터의 로컬 LLM으로 답하고, 로컬 LLM이 없으면 내장된 안내문을 그대로 보여 줍니다. 기밀 노트와 특허 후보는 로컬 LLM 세션에서만 다룹니다. 도입 환경에 맞는 구성은 문의해 주시면 함께 검토합니다.</p></details>
+  </div>
+</div></section>
+
+<!-- 도입 문의 (기존 화면과 같은 부품) -->
+<section class="sec s"><div class="wrap"><div class="cta pd-anchor" id="contact"><div><h2>배운 것이 다음 일의 출발점이 되도록</h2><p>보안 컨설팅과 침해사고 대응의 경험을 검증된 노트로 쌓는 방법을 함께 살펴보겠습니다.</p><div class="actions" style="margin-top:34px"><a class="pill white" href="mailto:hello@a3sc.co.kr">hello@a3sc.co.kr <span class="ar">→</span></a></div></div><div class="num">대표전화<b>02-6952-2511</b></div></div></div></section>
+
+<script>/* 서브 메뉴: 보고 있는 구역을 표시 */(function(){var nav=document.getElementById('pd-subnav');if(!nav||!('IntersectionObserver' in window))return;var as=nav.querySelectorAll('a'),map={};
+for(var i=0;i<as.length;i++){var el=document.getElementById(as[i].getAttribute('href').slice(1));if(el)map[el.id]=as[i]}
+var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){for(var j=0;j<as.length;j++)as[j].className='';map[es[i].target.id].className='on'}},{rootMargin:'-30% 0px -60% 0px'});
+for(var id in map)io.observe(document.getElementById(id))})()</script>
